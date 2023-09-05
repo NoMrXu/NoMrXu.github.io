@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>NoMrXu&#39;s Blog</title>
+  
+  <subtitle>咔咔咔</subtitle>
+  <link href="https://nomrxu.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://nomrxu.github.io/"/>
+  <updated>2023-08-30T03:13:02.313Z</updated>
+  <id>https://nomrxu.github.io/</id>
+  
+  <author>
+    <name>NoMrXu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>快捷键</title>
+    <link href="https://nomrxu.github.io/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://nomrxu.github.io/%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <published>2023-08-30T03:11:16.000Z</published>
+    <updated>2023-08-30T03:13:02.313Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这里可能找到神奇的快捷键 <span id="more"></span></p><h1 id="idea">IDEA</h1><ul><li>在整个项目文件内查找——CTRL+H</li><li>根据文件名称查找——两下SHIFT</li></ul><h1 id="pycharm">PyCharm</h1><ul><li>在整个项目文件内查找——CTRL+SHIFT+F</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这里可能找到神奇的快捷键&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>大数据</title>
+    <link href="https://nomrxu.github.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    <id>https://nomrxu.github.io/%E5%A4%A7%E6%95%B0%E6%8D%AE/</id>
+    <published>2023-08-24T08:48:29.000Z</published>
+    <updated>2023-08-25T02:59:08.627Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>有些地方要去，有些大数据要学。 <span id="more"></span></p><ul><li>ETL——抽取、转换、加载</li></ul><h1 id="数据仓库">数据仓库</h1><p><a href="https://help.aliyun.com/zh/maxcompute/getting-started/select-a-technical-architecture?spm=a2c4g.11186623.0.0.42af1f79mweLV0">阿里云大数据计算架构</a></p><h2 id="概念">概念</h2><p>https://blog.csdn.net/wjt199866/article/details/115184169</p><ul><li>ODS——（Operational DataStore）原始数据层，保持数据原貌，是作为数据库到数据仓库的一种过渡</li><li>DWD——（Data WarehouseDetail）明细数据层，是数据的归宿，这里保持这所有的从ODS到来的数据，并长期保存，而且这些数据不会被修改。</li><li>DWS——服务数据层</li><li>ADS——应用数据层</li></ul><hr><ul><li>维度表——维度表示你要对数据进行分析时所用的一个量,比如你要分析产品销售情况, 你可以选择按类别来进行分析,或按区域来分析.这样的 “按..分析“ 就构成一个维度。<ul><li>维度下钻：例子：如果我知道上海市的数据，但是我想查看各区的数据，维度级别变细，称为下钻，相反称为上卷。</li></ul></li><li>事实表——是数据聚合后依据某个维度生成的结果表，是具体的统计表</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;有些地方要去，有些大数据要学。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法题</title>
+    <link href="https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    <id>https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/</id>
+    <published>2023-08-21T06:25:24.000Z</published>
+    <updated>2023-08-24T07:12:49.049Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>虽然不会经常写，但偶尔加一点。 <span id="more"></span></p><h1 id="滑动窗口">滑动窗口</h1><ol type="1"><li>用两个数字<span class="math inline">\(l,r\)</span>代表窗口的左右</li><li><span class="math inline">\(r\)</span>不断增大，直至不满足条件</li><li><span class="math inline">\(l\)</span>不断增大，直至重新满足条件</li><li>返回结果</li></ol><p>（注意下标越界）</p><h1 id="左右指针">左右指针</h1><p>当我们需要枚举数组中的两个元素时，随着第一个元素的递增，第二个元素递减，在排序之后，使用一左一右两个指针，向中间靠拢。</p><h1 id="动态规划">动态规划</h1><p><span class="math display">\[P(i,j)\]</span></p><p><strong>状态转移方程</strong>是动态规划的关键（边界条件也很重要），通常有两个变量。想象一个二维数组是很有用的。</p><p><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>通常由两层循环组成，外层循环遍历length，内层循环遍历起始位置。<strong>区间长度由短至长</strong>，在计算长区间时可以利用之前计算过的短区间结果。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;虽然不会经常写，但偶尔加一点。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>厨神篇</title>
+    <link href="https://nomrxu.github.io/%E5%8E%A8%E7%A5%9E%E7%AF%87/"/>
+    <id>https://nomrxu.github.io/%E5%8E%A8%E7%A5%9E%E7%AF%87/</id>
+    <published>2023-08-21T02:50:21.000Z</published>
+    <updated>2023-09-05T06:48:32.550Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>从此刻开始，一名厨神踏上了征途。 <span id="more"></span></p><h1 id="基本功">基本功</h1><h2 id="拿刀">拿刀</h2><p>右手大拇指与食指夹住刀身，剩余三指握住刀把，保持稳定。</p><p>左手以中指第一指关节抵住刀身，指尖内敛。</p><h1 id="蒜蓉生菜">蒜蓉生菜</h1><ol type="1"><li>生菜剥好洗净</li><li>热油，加入蒜末到微黄（可以早点，不然直接爆油）</li><li>倒入生菜，开超</li><li>加入盐（酱油）</li><li>一会会就能出锅</li></ol><h1 id="涨蛋">涨蛋</h1><ol type="1"><li>鸡蛋打散，加盐</li><li>热油（一定要热，冒冒烟</li><li>倒鸡蛋，随便超超</li><li>出锅</li></ol><h1 id="番茄炒蛋">番茄炒蛋</h1><ol type="1"><li>鸡蛋打散（加点盐？</li><li>热油，倒鸡蛋</li><li>加番茄</li><li>加点水（一点点）</li><li>加盐、料酒、糖！！！</li><li>加葱</li><li>出锅</li></ol><h1 id="手撕包菜">手撕包菜</h1><ol type="1"><li>横切切两半，手撕，加盐清洗</li><li>大蒜、辣椒切碎</li><li>热油，爆香</li><li>下锅，<strong>放醋</strong></li><li>加入盐、糖、鸡精、酱油</li></ol><h1 id="芹菜">芹菜</h1><h1 id="菠菜">菠菜</h1><h1 id="香菇青菜">香菇青菜</h1><h1 id="糖醋排骨">糖醋排骨</h1><h1 id="毛豆炒青椒">毛豆炒青椒</h1><h1 id="蒜香豆芽">蒜香豆芽</h1>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;从此刻开始，一名厨神踏上了征途。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Mongo</title>
+    <link href="https://nomrxu.github.io/Mongo/"/>
+    <id>https://nomrxu.github.io/Mongo/</id>
+    <published>2023-08-01T06:45:05.000Z</published>
+    <updated>2023-08-21T07:17:23.885Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这里记录了工作中遇到的Mongo问题。 <span id="more"></span></p><p>Mongo查询的核心思想是流式查询，每一步都在对上一步的结果进行处理。$代表表中的值。</p><ul><li><p>可以使用<code>md.runSqlQuery(`   `)</code>试着执行SQL语句，不过可能会有意外的BUG</p></li><li><p>使用<code>$field</code>指代字段下的数据</p></li><li><p><code>$aggregate</code>——聚合函数，里面可以放多种对数据的处理。根据每种处理的顺序执行，类似管道</p><ul><li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><code>$project</code>——数据映射<ul><li>{<code>_id: 0</code>}——不显示_id（_id会默认显示）</li></ul></li><li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <code>$match</code>——数据过滤<ul><li>使用<code>$and</code>或者<code>$or</code>来进行条件连接</li></ul></li><li><code>$group</code>——分组<ul><li><code>$push</code>将该分组下的数据插入，最终产生一个数组</li><li><code>{$sum:1}</code>用于普通计数</li></ul></li></ul></li><li><p>日期</p><ul><li><code>$dateToString</code></li><li><code>$subtract</code></li><li><code>$toDate</code></li></ul></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这里记录了工作中遇到的Mongo问题。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="数据库" scheme="https://nomrxu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue学习</title>
+    <link href="https://nomrxu.github.io/Vue%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://nomrxu.github.io/Vue%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-07-31T09:50:48.000Z</published>
+    <updated>2023-08-04T08:31:12.214Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这里记录了学习前端Vue的一些内容</p><span id="more"></span><h1 id="vue-router">Vue Router</h1><ul><li>动态路由匹配——使用<code>:id</code>作为动态参数，并通过<code>this.$route.params</code>的<strong>属性</strong>获取<ul><li>使用<code>()</code>来为匹配增加正则表达式限制</li><li>直接增加 +或* 来表示可重复的参数，需要使用数组传递——如<code>/first/second/third</code></li></ul></li></ul><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const User = {</span><br><span class="line">  template: '&lt;div&gt;User&lt;/div&gt;',</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">// 这些都会传递给 `createRouter`</span><br><span class="line">const routes = [</span><br><span class="line">  // 动态字段以冒号开始</span><br><span class="line">  { path: '/users/:id', component: User },</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure><ul><li><p>使用带有参数的路由时,相同的组件实例将被重复使用——<strong>组件的生命周期钩子不会被调用</strong></p><ul><li><p>可以使用<code>watch</code></p><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">User</span> = {</span><br><span class="line">  <span class="attr">template</span>: <span class="string">'...'</span>,</span><br><span class="line">  <span class="title function_">created</span>(<span class="params"></span>) {</span><br><span class="line">    <span class="variable language_">this</span>.$watch(</span><br><span class="line">      <span class="function">() =&gt;</span> <span class="variable language_">this</span>.<span class="property">$route</span>.<span class="property">params</span>,</span><br><span class="line">      <span class="function">(<span class="params">toParams, previousParams</span>) =&gt;</span> {</span><br><span class="line">        <span class="comment">// 对路由变化做出响应...</span></span><br><span class="line">      }</span><br><span class="line">    )</span><br><span class="line">  },</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li><li><p>也可以使用<code>beforeRouteUpdate</code> 导航守卫</p><figure class="highlight csharp"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> User = {</span><br><span class="line">  template: <span class="string">'...'</span>,</span><br><span class="line">  <span class="function"><span class="keyword">async</span> <span class="title">beforeRouteUpdate</span>(<span class="params">to, <span class="keyword">from</span></span>)</span> {</span><br><span class="line">    <span class="comment">// 对路由变化做出响应...</span></span><br><span class="line">    <span class="keyword">this</span>.userData = <span class="keyword">await</span> fetchUser(to.<span class="keyword">params</span>.id)</span><br><span class="line">  },</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></li></ul></li><li><p><code>$router.push</code>和<code>$router.replace</code>区别在于是否会取代当前页面的历史记录</p></li><li><p>使用name来导航</p></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这里记录了学习前端Vue的一些内容&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="前端" scheme="https://nomrxu.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>医疗经验</title>
+    <link href="https://nomrxu.github.io/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/"/>
+    <id>https://nomrxu.github.io/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/</id>
+    <published>2023-07-31T02:32:47.000Z</published>
+    <updated>2023-08-17T03:16:36.476Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这里记录了痛苦与经验。 <span id="more"></span></p><h1 id="摔伤">摔伤</h1><ol type="1"><li><strong>生理盐水</strong>清洁伤口</li><li><strong>棉签+碘伏</strong>消毒</li><li><strong>纱布+医用胶布</strong>包扎</li><li><strong>冰袋</strong>冰敷</li><li>过几天贴<strong>膏药</strong>或<strong>喷药</strong>活血化瘀</li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这里记录了痛苦与经验。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="生活" scheme="https://nomrxu.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Py数据分析</title>
+    <link href="https://nomrxu.github.io/Py%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    <id>https://nomrxu.github.io/Py%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</id>
+    <published>2023-07-31T01:37:12.000Z</published>
+    <updated>2023-08-22T08:03:08.538Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这篇文章记录我学习Python数据分析的过程。</p><span id="more"></span><p>本文主要根据<a href="https://github.com/tangyudi/Ai-learn">《跟着迪哥学Python数据分析与机器学习实战》</a>学习。</p><ul><li>正态分布 <span class="math display">\[f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\]</span></li></ul><figure><img src="/images/image-20230815105502896.png" alt="image-20230815105502896"><figcaption aria-hidden="true">image-20230815105502896</figcaption></figure><ul><li>极大似然估计——<strong>利用已知的样本结果信息，反推最具有可能（最大概率）导致这些样本结果出现的模型参数值，换句话说，极大似然估计提供了一种给定观察数据来评估模型参数的方法，即：“模型已定，参数未知”。</strong></li></ul><h1 id="数据预处理">数据预处理</h1><h2 id="样本不均衡">样本不均衡</h2><p>问题：模型可能认为所有数据都是正常的，难以检测出不正常数据的特征</p><p>解决：</p><ol type="1"><li>下采样——让正常样本和异常样本一样少</li></ol><ul><li>例如异常样本有500，就提取500个正常样本。但是无法充分利用样本数据。</li></ul><ol start="2" type="1"><li>过采样——模拟生成新的异常样本</li></ol><ul><li>生成的异常样本可能不符合实际</li></ul><h3 id="smote算法">SMOTE算法</h3><ol type="1"><li>对少数类中的每一个样本</li></ol><h2 id="特征标准化">特征标准化</h2><p>问题：在一组样本中，可能某些特征数值变化很大，某些特征数值变化很小，但是有可能特征的重要性是一样的，不过是绝对值比较大。</p><p>解决：特征标准化（正态化）的公式如下 <span class="math display">\[Z=\frac{X-X_{mean}}{std(X)}\]</span> 其中，Z为标准化后的数据，X为原始数据</p><figure><img src="/images/image-20230816104606367.png" alt="image-20230816104606367"><figcaption aria-hidden="true">image-20230816104606367</figcaption></figure><h1 id="训练方式">训练方式</h1><h2 id="交叉验证">交叉验证</h2><p>把训练集分成若干份，每次取其中一份作为验证集，其余作为训练集。</p><figure><img src="/images/image-20230816165404175.png" alt="image-20230816165404175"><figcaption aria-hidden="true">image-20230816165404175</figcaption></figure><h2 id="正则化惩罚">正则化惩罚</h2><p>目标——解决模型训练过程中的过拟合问题（模型在训练集上效果很好，但实际应用效果很差）。惩罚数值较大的权重参数。</p><ul><li><p>L1正则化 <span class="math display">\[J=J_0+\alpha\sum_w{|w|}\]</span></p></li><li><p>L2正则化 <span class="math display">\[J=J_0+\alpha\sum_w{w^2}\]</span> 其中，<span class="math inline">\(J\)</span>代表最终损失函数，<span class="math inline">\(J_0\)</span>代表原始损失函数，第二项代表惩罚项，<span class="math inline">\(\alpha\)</span>代表惩罚系数，<span class="math inline">\(w\)</span>代表特征系数</p></li></ul><h1 id="模型评估">模型评估</h1><h2 id="tptnfpfn">TP、TN、FP、FN</h2><ul><li>TP——结果正确，真被预测为真</li><li>TN——结果正确，假被预测为假</li><li>FP——结果错误，假被预测为真</li><li>FN——结果错误，真被预测为假</li></ul><hr><ul><li><p>准确率（Accuracy）：表示分类问题中，做对的百分比 <span class="math display">\[Accuracy=\frac{TP+TN}{TP+TN+FP+FN}\]</span></p></li><li><p>召回率（Recall）：表示正例中有多少能预测到 <span class="math display">\[Recall=\frac{TP}{TP+FN}\]</span></p></li><li><p>精确度（Precision）：表示被分为正例中实际为正例的比例 <span class="math display">\[P=\frac{TP}{TP+FP}\]</span></p></li></ul><h1 id="部分操作">部分操作</h1><h2 id="数据切片">数据切片</h2><p>提取部分的列</p><figure class="highlight haskell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">X</span> = <span class="class"><span class="keyword">data</span>.loc[:, <span class="keyword">data</span>.columns != '<span class="type">Class'</span>]</span></span><br><span class="line"><span class="title">y</span> = <span class="class"><span class="keyword">data</span>.loc[:, <span class="keyword">data</span>.columns == '<span class="type">Class'</span>]</span></span><br></pre></td></tr></tbody></table></figure><h2 id="提取属性为特定值的index">提取属性为特定值的index</h2><figure class="highlight fortran"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fraud_indices = np.array(<span class="keyword">data</span>[<span class="keyword">data</span>.<span class="keyword">Class</span> == <span class="number">1</span>].<span class="built_in">index</span>)</span><br><span class="line">normal_indices = np.array(<span class="keyword">data</span>[<span class="keyword">data</span>.<span class="keyword">Class</span> == <span class="number">0</span>].<span class="built_in">index</span>)</span><br></pre></td></tr></tbody></table></figure><p>这里的Class是字段名称</p><h1 id="根据下标数组提取行">根据下标数组提取行</h1><figure class="highlight haskell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">under_sample_data</span> = <span class="class"><span class="keyword">data</span>.loc[under_sample_indices, :]</span></span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这篇文章记录我学习Python数据分析的过程。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="数据分析" scheme="https://nomrxu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬虫</title>
+    <link href="https://nomrxu.github.io/%E7%88%AC%E8%99%AB/"/>
+    <id>https://nomrxu.github.io/%E7%88%AC%E8%99%AB/</id>
+    <published>2023-07-28T09:44:36.000Z</published>
+    <updated>2023-08-14T06:39:31.850Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>爬虫是很好的东西，可以做到很多有意思的事情。</p><span id="more"></span><h1 id="随想">随想</h1><ul><li>爬虫的经典方式<ul><li>使用Python自带的Requests库进行请求</li><li>使用Selenium进行脚本模拟</li></ul></li></ul><p>通常，使用Selenium会更加贴近人的操作方式，更加容易编程，躲避反爬机制。</p><h1 id="xpath">Xpath</h1><p>学习爬虫，要学会使用Xpath定位元素</p><table><thead><tr class="header"><th>表达式</th><th>意义</th></tr></thead><tbody><tr class="odd"><td>/</td><td>在下一层寻找（不会深入）</td></tr><tr class="even"><td>//</td><td>在下面所有层寻找</td></tr><tr class="odd"><td>@。。。</td><td>选择属性</td></tr><tr class="even"><td>div、a等元素名称</td><td>查找符合的元素</td></tr><tr class="odd"><td>..</td><td>父元素</td></tr><tr class="even"><td>*</td><td>匹配任何元素</td></tr><tr class="odd"><td>[last()</td><td>最后一个</td></tr></tbody></table><blockquote><p>示例</p><p>//a<span class="citation" data-cites="id">[@id='nav_default']</span></p><p>选取所有 a 元素，且这些元素的id属性值为nav_default</p></blockquote><h1 id="selenium">Selenium</h1><p>首先，你需要有Python，同时安装了selenium库，并且有浏览器（推荐是Chrome），并且下载了对应的chrome_driver驱动。</p><p>然后可以参考下图进行配置。其中implicitly_wait（隐式等待）是很重要的，这能帮助你在使用XPATH搜索元素时等待一段时间，避免程序太快而网页加载太慢。</p><figure class="highlight reasonml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> chrome:</span><br><span class="line">    def <span class="constructor">__init__(<span class="params">self</span>)</span>:</span><br><span class="line">        chrome_driver_path = r'/chromedriver.exe'</span><br><span class="line">        options = webdriver.<span class="constructor">ChromeOptions()</span></span><br><span class="line">        options.add<span class="constructor">_argument('<span class="params">ignore</span>-<span class="params">certificate</span>-<span class="params">errors</span>')</span></span><br><span class="line">        options.add<span class="constructor">_argument('<span class="params">headless</span>')</span></span><br><span class="line">        self.driver = webdriver.<span class="constructor">Chrome(<span class="params">executable_path</span>=<span class="params">chrome_driver_path</span>, <span class="params">chrome_options</span>=<span class="params">options</span>)</span></span><br><span class="line">        self.driver.implicitly<span class="constructor">_wait(30)</span></span><br><span class="line"></span><br><span class="line">    def click(self, XPATH):</span><br><span class="line">        button = <span class="constructor">WebDriverWait(<span class="params">driver</span>=<span class="params">self</span>.<span class="params">driver</span>, <span class="params">timeout</span>=10)</span>.until(<span class="module-access"><span class="module"><span class="identifier">EC</span>.</span></span>presence<span class="constructor">_of_element_located((By.XPATH, XPATH)</span>))</span><br><span class="line">        button.click<span class="literal">()</span></span><br><span class="line"></span><br><span class="line">    def input(self, XPATH, content):</span><br><span class="line">        input = <span class="constructor">WebDriverWait(<span class="params">driver</span>=<span class="params">self</span>.<span class="params">driver</span>, <span class="params">timeout</span>=10)</span>.until(<span class="module-access"><span class="module"><span class="identifier">EC</span>.</span></span>presence<span class="constructor">_of_element_located((By.XPATH, XPATH)</span>))</span><br><span class="line">        input.send<span class="constructor">_keys(<span class="params">content</span>)</span></span><br><span class="line"></span><br><span class="line">    def get(self, URL):</span><br><span class="line">        self.driver.get(URL)</span><br></pre></td></tr></tbody></table></figure><h1 id="实战脚本">实战脚本</h1><h2 id="爬取b站视频封面">爬取B站视频封面</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用selenium与requests进行b站视频爬取</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">BiliBili_Cover</span>(<span class="params">URL, dir_name</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(dir_name):</span><br><span class="line">        os.mkdir(dir_name)</span><br><span class="line">    base_url = URL</span><br><span class="line">    ch = chrome()</span><br><span class="line">    ch.get(base_url)</span><br><span class="line">    pageNum = <span class="built_in">int</span>(ch.driver.find_elements(By.XPATH, <span class="string">'//*[@id="submit-video-list"]/ul[3]/li/a'</span>)[-<span class="number">2</span>].text)</span><br><span class="line">    <span class="built_in">print</span>(pageNum)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"start!"</span>)</span><br><span class="line">    save_path = <span class="string">'./'</span> + dir_name + <span class="string">'/'</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, pageNum + <span class="number">1</span>):</span><br><span class="line">        url = base_url + <span class="string">"?pn="</span> + <span class="built_in">str</span>(i)</span><br><span class="line">        ch.get(url)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"Page "</span> + <span class="built_in">str</span>(i))</span><br><span class="line">        list_XPATH = <span class="string">'//*[@id="submit-video-list"]/ul[2]'</span></span><br><span class="line">        img_list = ch.driver.find_element(By.XPATH, list_XPATH)</span><br><span class="line">        img_list = img_list.find_elements(By.XPATH, <span class="string">'//img'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">len</span>(img_list))</span><br><span class="line">        <span class="keyword">for</span> img <span class="keyword">in</span> img_list:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                response = requests.get(img.get_attribute(<span class="string">'src'</span>))</span><br><span class="line">            <span class="keyword">except</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            img_name = re.sub(<span class="string">r"[\/\\\:\*\?\"\&lt;\&gt;\|]"</span>, <span class="string">"_"</span>, img.get_attribute(<span class="string">'alt'</span>))</span><br><span class="line">            img_save_path = save_path + img_name + <span class="string">'.jpg'</span></span><br><span class="line">            <span class="keyword">if</span> img_name == <span class="string">''</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(img_save_path, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">"Save "</span> + img_name)</span><br><span class="line">                f.write(response.content)</span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;爬虫是很好的东西，可以做到很多有意思的事情。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="爬虫" scheme="https://nomrxu.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随想</title>
+    <link href="https://nomrxu.github.io/%E9%9A%8F%E6%83%B3/"/>
+    <id>https://nomrxu.github.io/%E9%9A%8F%E6%83%B3/</id>
+    <published>2023-07-26T02:28:15.000Z</published>
+    <updated>2023-09-05T06:41:38.698Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这里是一段随想，记录每天的奇思妙想</p><span id="more"></span><h1 id="section">7.26</h1><p>想起看过面膜老师的一个图，“四月是你的谎言（其实每个月都是）”，但重新找又找不到。</p><p>下次有空会做个爬虫把面膜老师的阿诺的视频封面和名称爬一下，还有诺学研究院的公众号</p><h1 id="section-1">8.4</h1><p>今天写代码，写错了地方，没有用原来的结构，新建了一个接口。但同事并灭有怪我，“能调用就行”。<span class="github-emoji"><span>🤔</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f914.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>这样真的好吗。</p><h1 id="section-2">8.5</h1><p>昨晚做了个很好的梦，我相信梦里的事情在未来会发生的。生活中总会有某个时刻感觉此情此景似乎见过。</p><p>听了<a href="https://hifini.com/thread-76306.htm">回忆观影券</a>，好想出去跑步<span class="github-emoji"><span>😢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>，可惜不得。</p><h1 id="section-3">8.9</h1><p>眺望未来，珍惜当下。</p><h1 id="section-4">8.21</h1><p>copy——其实选择和谁在一起，就像是去海滩捡贝壳，我知道这广阔海边一定会有更美更好看的那一颗。但人的一生如此短暂，我已经捡到了属于我的那枚独一无二的。那么剩下的，就留给其他人吧</p><h1 id="section-5">8.23</h1><p>今日好歌推荐，偶然听见，突然爱上。<a href="https://hifini.com/thread-37151.htm">Angel Of Mine</a><span class="github-emoji"><span>❤</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>    <div id="aplayer-xcReiqFR" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="4388051" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div><h1 id="section-6">8.29</h1><p>总会有人发现你的价值，认可，给你带来快乐。<span class="github-emoji"><span>😆</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f606.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p><p>总有些惊奇的际遇~</p><h1 id="section-7">8.30</h1><p>从生活中寻找甜蜜。<span class="github-emoji"><span>🍬</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f36c.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>    <div id="aplayer-ofATaGYf" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1919147134" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>    <div id="aplayer-iZGDosNB" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="254141" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div><h1 id="section-8">9.4</h1><p>日有所思，夜有所梦。<span class="github-emoji"><span>🌙</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f319.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p><p>爱己而后爱人。</p><h1 id="section-9">9.5</h1><p>心脏结实地跳动，让我感受到自己。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这里是一段随想，记录每天的奇思妙想&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="生活" scheme="https://nomrxu.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo使用</title>
+    <link href="https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/"/>
+    <id>https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-07-26T02:04:25.000Z</published>
+    <updated>2023-08-23T09:29:48.628Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这里记录了我使用hexo的情况</p><span id="more"></span><h1 id="typora中的一些内容">Typora中的一些内容</h1><h2 id="摘录">摘录</h2><p><del>在正文之前使用&lt;!--more--&gt;可以为文章添加摘录，例如</del></p><blockquote><p>这里是一段摘录 &lt;!--more--&gt; 这里是正文</p></blockquote><p>在文章开头添加excerpt属性也可以添加摘录</p><h2 id="快捷键">快捷键</h2><p>CTRL+SHIFT+Q可以特殊标记</p><blockquote><p>就像这样</p></blockquote><p>```可以配置代码块</p><figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我是代码块</span><br></pre></td></tr></tbody></table></figure><p>选中文字并且两次SHIFT+~可以为文字添加删除线</p><p><del>我被删除了</del></p><h1 id="miho主题">MiHo主题</h1><p>一般都用hexo server启动服务后右击检查属性查找源码的对应位置</p><p>观察元素的属性配置查找对应的CSS</p><h2 id="变量">变量</h2><p>MiHo主题的源码中，使用<strong>post</strong>指代文章</p><table><thead><tr class="header"><th>post</th><th>文章</th></tr></thead><tbody><tr class="odd"><td>config</td><td>hexo目录下的_config.yml</td></tr><tr class="even"><td>theme</td><td>MiHo目录下的_config.yml</td></tr><tr class="odd"><td></td><td></td></tr></tbody></table><h2 id="图片显示">图片显示</h2><p>最好把图片显示都改成相对路径，这样在本地测试时也能展示。比如文章封面图</p><h1 id="hexo">Hexo</h1><h2 id="命令行">命令行</h2><p>如果hexo deploy中出现<strong>Error: Spawnfailed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者是因为网络连不上Git，换一个更稳定的网络。</p><h2 id="公式块">公式块</h2><p>首先替换hexo的渲染器，marked不支持mathjax</p><p><strong>感谢大佬提供的渲染器</strong></p><figure class="highlight coffeescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> uninstall hexo-renderer-marked --save</span><br><span class="line"><span class="built_in">npm</span> uninstall hexo-math --save</span><br><span class="line"><span class="built_in">npm</span> install hexo-renderer-pandoc</span><br><span class="line"><span class="built_in">npm</span> install hexo-renderer-mathjax --save</span><br></pre></td></tr></tbody></table></figure><p>在主题配置文件中</p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure><p>在文章元数据中</p><figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure><p>当然，如果使用hexo-renderer-kramed渲染器，可能会碰到http与https的问题，也许可以通过修改<code>node_modules/hexo-renderer-mathjax/mathjax.html</code>中的script修复，但我没试过。</p><h2 id="图片">图片</h2><p>为文章开头的元数据增加</p><figure class="highlight http"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">typora-root-url</span><span class="punctuation">: </span>../</span><br></pre></td></tr></tbody></table></figure><p>可以通过修改<code>scaffolds/post.md</code>进行统一配置</p><p>然后在<code>source/</code>下创建图片文件夹(例如images)</p><p>修改typora偏好设置</p><figure><img src="/images/image-20230817110436988.png" alt="image-20230817110436988"><figcaption aria-hidden="true">image-20230817110436988</figcaption></figure><h1 id="aplayer">Aplayer</h1><p><code>{% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}</code></p><p>title，author，url都是需要填写的。其中URL推荐使用在线网站的音乐（不推荐网易云等大平台，放不了会员歌曲，推荐找小众平台，放音乐前打开网络监控，查找类型为media的获取下载音乐的URL)。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这里记录了我使用hexo的情况&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="https://nomrxu.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>

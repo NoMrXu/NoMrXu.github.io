@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>爬虫 | NoMrXu&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="description" content="爬虫是很好的东西，可以做到很多有意思的事情。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="爬虫">
+<meta property="og:url" content="https://nomrxu.github.io/%E7%88%AC%E8%99%AB/index.html">
+<meta property="og:site_name" content="NoMrXu&#39;s Blog">
+<meta property="og:description" content="爬虫是很好的东西，可以做到很多有意思的事情。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-07-28T09:44:36.000Z">
+<meta property="article:modified_time" content="2023-08-14T06:39:31.850Z">
+<meta property="article:author" content="NoMrXu">
+<meta property="article:tag" content="爬虫">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<script src="/js/pace.min.js"></script>
+
+  
+
+  
+  
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="NoMrXu's Blog" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">不是徐先生呀&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        不是徐先生呀&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3 >
+                        <a href="https://nomrxu.github.io/2023/07/26/随想/" target="_blank" style="text-decoration: none; color: inherit;">有一天，他想起来写点什么</a>
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Always" target="_blank" ">
+                            <i class="fa fa-qq fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/NoMrXu">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-爬虫" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      爬虫
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2023-07-28
+        </li>
+<!--        <li>-->
+<!--          <i class="fa fa-eye"></i>-->
+<!--          <span id="busuanzi_value_page_pv"></span>-->
+<!--        </li>-->
+        <li>
+          By.NoMrXu
+        </li>
+      </ul>
+    </div>
+  
+
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p>爬虫是很好的东西，可以做到很多有意思的事情。</p>
+<span id="more"></span>
+<h1 id="随想">随想</h1>
+<ul>
+<li>爬虫的经典方式
+<ul>
+<li>使用Python自带的Requests库进行请求</li>
+<li>使用Selenium进行脚本模拟</li>
+</ul></li>
+</ul>
+<p>通常，使用Selenium会更加贴近人的操作方式，更加容易编程，躲避反爬机制。</p>
+<h1 id="xpath">Xpath</h1>
+<p>学习爬虫，要学会使用Xpath定位元素</p>
+<table>
+<thead>
+<tr class="header">
+<th>表达式</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>/</td>
+<td>在下一层寻找（不会深入）</td>
+</tr>
+<tr class="even">
+<td>//</td>
+<td>在下面所有层寻找</td>
+</tr>
+<tr class="odd">
+<td>@。。。</td>
+<td>选择属性</td>
+</tr>
+<tr class="even">
+<td>div、a等元素名称</td>
+<td>查找符合的元素</td>
+</tr>
+<tr class="odd">
+<td>..</td>
+<td>父元素</td>
+</tr>
+<tr class="even">
+<td>*</td>
+<td>匹配任何元素</td>
+</tr>
+<tr class="odd">
+<td>[last()</td>
+<td>最后一个</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>示例</p>
+<p>//a<span class="citation" data-cites="id">[@id='nav_default']</span></p>
+<p>选取所有 a 元素，且这些元素的id属性值为nav_default</p>
+</blockquote>
+<h1 id="selenium">Selenium</h1>
+<p>首先，你需要有Python，同时安装了selenium库，并且有浏览器（推荐是Chrome），并且下载了对应的chrome_driver驱动。</p>
+<p>然后可以参考下图进行配置。其中implicitly_wait（隐式等待）是很重要的，这能帮助你在使用XPATH搜索元素时等待一段时间，避免程序太快而网页加载太慢。</p>
+<figure class="highlight reasonml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> chrome:</span><br><span class="line">    def <span class="constructor">__init__(<span class="params">self</span>)</span>:</span><br><span class="line">        chrome_driver_path = r'/chromedriver.exe'</span><br><span class="line">        options = webdriver.<span class="constructor">ChromeOptions()</span></span><br><span class="line">        options.add<span class="constructor">_argument('<span class="params">ignore</span>-<span class="params">certificate</span>-<span class="params">errors</span>')</span></span><br><span class="line">        options.add<span class="constructor">_argument('<span class="params">headless</span>')</span></span><br><span class="line">        self.driver = webdriver.<span class="constructor">Chrome(<span class="params">executable_path</span>=<span class="params">chrome_driver_path</span>, <span class="params">chrome_options</span>=<span class="params">options</span>)</span></span><br><span class="line">        self.driver.implicitly<span class="constructor">_wait(30)</span></span><br><span class="line"></span><br><span class="line">    def click(self, XPATH):</span><br><span class="line">        button = <span class="constructor">WebDriverWait(<span class="params">driver</span>=<span class="params">self</span>.<span class="params">driver</span>, <span class="params">timeout</span>=10)</span>.until(<span class="module-access"><span class="module"><span class="identifier">EC</span>.</span></span>presence<span class="constructor">_of_element_located((By.XPATH, XPATH)</span>))</span><br><span class="line">        button.click<span class="literal">()</span></span><br><span class="line"></span><br><span class="line">    def input(self, XPATH, content):</span><br><span class="line">        input = <span class="constructor">WebDriverWait(<span class="params">driver</span>=<span class="params">self</span>.<span class="params">driver</span>, <span class="params">timeout</span>=10)</span>.until(<span class="module-access"><span class="module"><span class="identifier">EC</span>.</span></span>presence<span class="constructor">_of_element_located((By.XPATH, XPATH)</span>))</span><br><span class="line">        input.send<span class="constructor">_keys(<span class="params">content</span>)</span></span><br><span class="line"></span><br><span class="line">    def get(self, URL):</span><br><span class="line">        self.driver.get(URL)</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="实战脚本">实战脚本</h1>
+<h2 id="爬取b站视频封面">爬取B站视频封面</h2>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用selenium与requests进行b站视频爬取</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">BiliBili_Cover</span>(<span class="params">URL, dir_name</span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(dir_name):</span><br><span class="line">        os.mkdir(dir_name)</span><br><span class="line">    base_url = URL</span><br><span class="line">    ch = chrome()</span><br><span class="line">    ch.get(base_url)</span><br><span class="line">    pageNum = <span class="built_in">int</span>(ch.driver.find_elements(By.XPATH, <span class="string">'//*[@id="submit-video-list"]/ul[3]/li/a'</span>)[-<span class="number">2</span>].text)</span><br><span class="line">    <span class="built_in">print</span>(pageNum)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"start!"</span>)</span><br><span class="line">    save_path = <span class="string">'./'</span> + dir_name + <span class="string">'/'</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, pageNum + <span class="number">1</span>):</span><br><span class="line">        url = base_url + <span class="string">"?pn="</span> + <span class="built_in">str</span>(i)</span><br><span class="line">        ch.get(url)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"Page "</span> + <span class="built_in">str</span>(i))</span><br><span class="line">        list_XPATH = <span class="string">'//*[@id="submit-video-list"]/ul[2]'</span></span><br><span class="line">        img_list = ch.driver.find_element(By.XPATH, list_XPATH)</span><br><span class="line">        img_list = img_list.find_elements(By.XPATH, <span class="string">'//img'</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">len</span>(img_list))</span><br><span class="line">        <span class="keyword">for</span> img <span class="keyword">in</span> img_list:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                response = requests.get(img.get_attribute(<span class="string">'src'</span>))</span><br><span class="line">            <span class="keyword">except</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            img_name = re.sub(<span class="string">r"[\/\\\:\*\?\"\&lt;\&gt;\|]"</span>, <span class="string">"_"</span>, img.get_attribute(<span class="string">'alt'</span>))</span><br><span class="line">            img_save_path = save_path + img_name + <span class="string">'.jpg'</span></span><br><span class="line">            <span class="keyword">if</span> img_name == <span class="string">''</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(img_save_path, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">"Save "</span> + img_name)</span><br><span class="line">                f.write(response.content)</span><br></pre></td></tr></tbody></table></figure>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2023年08月14日 14:39</p>
+        <p>原始链接： <a class="post-url" href="/%E7%88%AC%E8%99%AB/" title="爬虫">戳这里</a></p>
+        <footer>
+            <a href="https://nomrxu.github.io">
+                <img src="/images/logo.png" alt="NoMrXu">
+                NoMrXu
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nomrxu.github.io/%E7%88%AC%E8%99%AB/&title=《爬虫》 — NoMrXu's Blog&pic=https://nomrxu.github.ioimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nomrxu.github.io/%E7%88%AC%E8%99%AB/&title=《爬虫》 — NoMrXu's Blog&source=爬虫是很好的东西，可以做到很多有意思的事情。" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nomrxu.github.io/%E7%88%AC%E8%99%AB/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《爬虫》 — NoMrXu's Blog&url=https://nomrxu.github.io/%E7%88%AC%E8%99%AB/&via=https://nomrxu.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nomrxu.github.io/%E7%88%AC%E8%99%AB/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nomrxu.github.io/%E7%88%AC%E8%99%AB/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/爬虫/" class="color3">爬虫</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E9%9A%8F%E6%83%B3"><span class="post-toc-text">随想</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#xpath"><span class="post-toc-text">Xpath</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#selenium"><span class="post-toc-text">Selenium</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%AE%9E%E6%88%98%E8%84%9A%E6%9C%AC"><span class="post-toc-text">实战脚本</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%88%AC%E5%8F%96b%E7%AB%99%E8%A7%86%E9%A2%91%E5%B0%81%E9%9D%A2"><span class="post-toc-text">爬取B站视频封面</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/Py%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          Py数据分析
+        
+      </span>
+    </a>
+  
+  
+    <a href="/%E9%9A%8F%E6%83%B3/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">随想</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2023 NoMrXu<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://nomrxu.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 0
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 10px;">数据分析</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 20px;">生活</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" style="font-size: 10px;">数据分析</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 10px;">爬虫</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 20px;">生活</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+
+<script src="/js/search.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  
+<script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+
+  
+<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  
+<script src="/js/animate.js"></script>
+
+
+
+  
+<script src="/js/pop-img.js"></script>
+
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
