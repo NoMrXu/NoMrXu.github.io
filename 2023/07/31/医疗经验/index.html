@@ -3,24 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Mongo | NoMrXu&#39;s Blog</title>
+  <title>医疗经验 | NoMrXu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="这里记录了工作中遇到的Mongo问题。">
+  <meta name="description" content="这里记录了痛苦与经验。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mongo">
-<meta property="og:url" content="https://nomrxu.github.io/Mongo/index.html">
+<meta property="og:title" content="医疗经验">
+<meta property="og:url" content="https://nomrxu.github.io/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/index.html">
 <meta property="og:site_name" content="NoMrXu&#39;s Blog">
-<meta property="og:description" content="这里记录了工作中遇到的Mongo问题。">
+<meta property="og:description" content="这里记录了痛苦与经验。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
-<meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
-<meta property="article:published_time" content="2023-08-01T06:45:05.000Z">
-<meta property="article:modified_time" content="2023-08-21T07:17:23.885Z">
+<meta property="article:published_time" content="2023-07-31T02:32:47.000Z">
+<meta property="article:modified_time" content="2023-08-17T03:16:36.476Z">
 <meta property="article:author" content="NoMrXu">
-<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="生活">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
   
   
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -113,20 +110,20 @@
 </header>
 
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-Mongo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-医疗经验" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      Mongo
+      医疗经验
     </h1>
     <div class="post-title-bar">
       <ul>
           
         <li>
-          <i class="fa fa-calendar"></i>  2023-08-01
+          <i class="fa fa-calendar"></i>  2023-07-31
         </li>
 <!--        <li>-->
 <!--          <i class="fa fa-eye"></i>-->
@@ -146,39 +143,20 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <p>这里记录了工作中遇到的Mongo问题。 <span id="more"></span></p>
-<p>Mongo查询的核心思想是流式查询，每一步都在对上一步的结果进行处理。$代表表中的值。</p>
-<ul>
-<li><p>可以使用<code>md.runSqlQuery(`   `)</code>试着执行SQL语句，不过可能会有意外的BUG</p></li>
-<li><p>使用<code>$field</code>指代字段下的数据</p></li>
-<li><p><code>$aggregate</code>——聚合函数，里面可以放多种对数据的处理。根据每种处理的顺序执行，类似管道</p>
-<ul>
-<li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><code>$project</code>——数据映射
-<ul>
-<li>{<code>_id: 0</code>}——不显示_id（_id会默认显示）</li>
-</ul></li>
-<li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <code>$match</code>——数据过滤
-<ul>
-<li>使用<code>$and</code>或者<code>$or</code>来进行条件连接</li>
-</ul></li>
-<li><code>$group</code>——分组
-<ul>
-<li><code>$push</code>将该分组下的数据插入，最终产生一个数组</li>
-<li><code>{$sum:1}</code>用于普通计数</li>
-</ul></li>
-</ul></li>
-<li><p>日期</p>
-<ul>
-<li><code>$dateToString</code></li>
-<li><code>$subtract</code></li>
-<li><code>$toDate</code></li>
-</ul></li>
-</ul>
+            <p>这里记录了痛苦与经验。 <span id="more"></span></p>
+<h1 id="摔伤">摔伤</h1>
+<ol type="1">
+<li><strong>生理盐水</strong>清洁伤口</li>
+<li><strong>棉签+碘伏</strong>消毒</li>
+<li><strong>纱布+医用胶布</strong>包扎</li>
+<li><strong>冰袋</strong>冰敷</li>
+<li>过几天贴<strong>膏药</strong>或<strong>喷药</strong>活血化瘀</li>
+</ol>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2023年08月21日 15:17</p>
-        <p>原始链接： <a class="post-url" href="/Mongo/" title="Mongo">戳这里</a></p>
+        <p>最后更新： 2023年08月17日 11:16</p>
+        <p>原始链接： <a class="post-url" href="/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/" title="医疗经验">戳这里</a></p>
         <footer>
             <a href="https://nomrxu.github.io">
                 <img src="/images/logo.png" alt="NoMrXu">
@@ -204,7 +182,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nomrxu.github.io/Mongo/&title=《Mongo》 — NoMrXu's Blog&pic=https://nomrxu.github.ioimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nomrxu.github.io/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/&title=《医疗经验》 — NoMrXu's Blog&pic=/images/image-20230801091147024.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -214,22 +192,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nomrxu.github.io/Mongo/&title=《Mongo》 — NoMrXu's Blog&source=这里记录了工作中遇到的Mongo问题。" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nomrxu.github.io/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/&title=《医疗经验》 — NoMrXu's Blog&source=这里记录了痛苦与经验。" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nomrxu.github.io/Mongo/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nomrxu.github.io/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Mongo》 — NoMrXu's Blog&url=https://nomrxu.github.io/Mongo/&via=https://nomrxu.github.io" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《医疗经验》 — NoMrXu's Blog&url=https://nomrxu.github.io/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/&via=https://nomrxu.github.io" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nomrxu.github.io/Mongo/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nomrxu.github.io/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -239,7 +217,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nomrxu.github.io/Mongo/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nomrxu.github.io/2023/07/31/%E5%8C%BB%E7%96%97%E7%BB%8F%E9%AA%8C/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -251,7 +229,7 @@
   <li class="article-footer-tags">
     <i class="fa fa-tags"></i>
       
-    <a href="/tags/数据库/" class="color4">数据库</a>
+    <a href="/tags/生活/" class="color3">生活</a>
       
   </li>
 
@@ -262,22 +240,28 @@
 </article>
 
 
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E6%91%94%E4%BC%A4"><span class="post-toc-text">摔伤</span></a></li></ol>
+        </nav>
+    </aside>
+    
 
 <nav id="article-nav">
   
-    <a href="/%E5%8E%A8%E7%A5%9E%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/07/31/Vue%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          厨神篇
+          Vue学习
         
       </span>
     </a>
   
   
-    <a href="/Vue%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">Vue学习</span>
+    <a href="/2023/07/31/Py%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Py数据分析</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
@@ -430,5 +414,21 @@
   </script>
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 </body>
 </html>

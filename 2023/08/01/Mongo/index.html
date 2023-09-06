@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hexo使用 | NoMrXu&#39;s Blog</title>
+  <title>Mongo | NoMrXu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="这里记录了我使用hexo的情况">
+  <meta name="description" content="这里记录了工作中遇到的Mongo问题。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo使用">
-<meta property="og:url" content="https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:title" content="Mongo">
+<meta property="og:url" content="https://nomrxu.github.io/2023/08/01/Mongo/index.html">
 <meta property="og:site_name" content="NoMrXu&#39;s Blog">
-<meta property="og:description" content="这里记录了我使用hexo的情况">
+<meta property="og:description" content="这里记录了工作中遇到的Mongo问题。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://nomrxu.github.io/images/image-20230817110436988.png">
-<meta property="article:published_time" content="2023-07-26T02:04:25.000Z">
-<meta property="article:modified_time" content="2023-08-23T09:29:48.628Z">
+<meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
+<meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
+<meta property="article:published_time" content="2023-08-01T06:45:05.000Z">
+<meta property="article:modified_time" content="2023-08-21T07:17:23.885Z">
 <meta property="article:author" content="NoMrXu">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://nomrxu.github.io/images/image-20230817110436988.png">
+<meta name="twitter:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
   
   
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -112,20 +113,20 @@
 </header>
 
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-hexo使用" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-Mongo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      hexo使用
+      Mongo
     </h1>
     <div class="post-title-bar">
       <ul>
           
         <li>
-          <i class="fa fa-calendar"></i>  2023-07-26
+          <i class="fa fa-calendar"></i>  2023-08-01
         </li>
 <!--        <li>-->
 <!--          <i class="fa fa-eye"></i>-->
@@ -145,84 +146,39 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <p>这里记录了我使用hexo的情况</p>
-<span id="more"></span>
-<h1 id="typora中的一些内容">Typora中的一些内容</h1>
-<h2 id="摘录">摘录</h2>
-<p><del>在正文之前使用&lt;!--more--&gt;可以为文章添加摘录，例如</del></p>
-<blockquote>
-<p>这里是一段摘录 &lt;!--more--&gt; 这里是正文</p>
-</blockquote>
-<p>在文章开头添加excerpt属性也可以添加摘录</p>
-<h2 id="快捷键">快捷键</h2>
-<p>CTRL+SHIFT+Q可以特殊标记</p>
-<blockquote>
-<p>就像这样</p>
-</blockquote>
-<p>```可以配置代码块</p>
-<figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我是代码块</span><br></pre></td></tr></tbody></table></figure>
-<p>选中文字并且两次SHIFT+~可以为文字添加删除线</p>
-<p><del>我被删除了</del></p>
-<h1 id="miho主题">MiHo主题</h1>
-<p>一般都用hexo server启动服务后右击检查属性查找源码的对应位置</p>
-<p>观察元素的属性配置查找对应的CSS</p>
-<h2 id="变量">变量</h2>
-<p>MiHo主题的源码中，使用<strong>post</strong>指代文章</p>
-<table>
-<thead>
-<tr class="header">
-<th>post</th>
-<th>文章</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>config</td>
-<td>hexo目录下的_config.yml</td>
-</tr>
-<tr class="even">
-<td>theme</td>
-<td>MiHo目录下的_config.yml</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="图片显示">图片显示</h2>
-<p>最好把图片显示都改成相对路径，这样在本地测试时也能展示。比如文章封面图</p>
-<h1 id="hexo">Hexo</h1>
-<h2 id="命令行">命令行</h2>
-<p>如果hexo deploy中出现<strong>Error: Spawn
-failed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者是因为网络连不上Git，换一个更稳定的网络。</p>
-<h2 id="公式块">公式块</h2>
-<p>首先替换hexo的渲染器，marked不支持mathjax</p>
-<p><strong>感谢大佬提供的渲染器</strong></p>
-<figure class="highlight coffeescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> uninstall hexo-renderer-marked --save</span><br><span class="line"><span class="built_in">npm</span> uninstall hexo-math --save</span><br><span class="line"><span class="built_in">npm</span> install hexo-renderer-pandoc</span><br><span class="line"><span class="built_in">npm</span> install hexo-renderer-mathjax --save</span><br></pre></td></tr></tbody></table></figure>
-<p>在主题配置文件中</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
-<p>在文章元数据中</p>
-<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
-<p>当然，如果使用hexo-renderer-kramed渲染器，可能会碰到http与https的问题，也许可以通过修改<code>node_modules/hexo-renderer-mathjax/mathjax.html</code>中的script修复，但我没试过。</p>
-<h2 id="图片">图片</h2>
-<p>为文章开头的元数据增加</p>
-<figure class="highlight http"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">typora-root-url</span><span class="punctuation">: </span>../</span><br></pre></td></tr></tbody></table></figure>
-<p>可以通过修改<code>scaffolds/post.md</code>进行统一配置</p>
-<p>然后在<code>source/</code>下创建图片文件夹(例如images)</p>
-<p>修改typora偏好设置</p>
-<figure>
-<img src="/images/image-20230817110436988.png" alt="image-20230817110436988">
-<figcaption aria-hidden="true">image-20230817110436988</figcaption>
-</figure>
-<h1 id="aplayer">Aplayer</h1>
-<p><code>{% aplayer title author url [picture_url, narrow, autoplay, width:xxx, lrc:xxx] %}</code></p>
-<p>title，author，url都是需要填写的。其中URL推荐使用在线网站的音乐（不推荐网易云等大平台，放不了会员歌曲，推荐找小众平台，放音乐前打开网络监控，查找类型为media的获取下载音乐的URL)。</p>
+            <p>这里记录了工作中遇到的Mongo问题。 <span id="more"></span></p>
+<p>Mongo查询的核心思想是流式查询，每一步都在对上一步的结果进行处理。$代表表中的值。</p>
+<ul>
+<li><p>可以使用<code>md.runSqlQuery(`   `)</code>试着执行SQL语句，不过可能会有意外的BUG</p></li>
+<li><p>使用<code>$field</code>指代字段下的数据</p></li>
+<li><p><code>$aggregate</code>——聚合函数，里面可以放多种对数据的处理。根据每种处理的顺序执行，类似管道</p>
+<ul>
+<li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><code>$project</code>——数据映射
+<ul>
+<li>{<code>_id: 0</code>}——不显示_id（_id会默认显示）</li>
+</ul></li>
+<li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <code>$match</code>——数据过滤
+<ul>
+<li>使用<code>$and</code>或者<code>$or</code>来进行条件连接</li>
+</ul></li>
+<li><code>$group</code>——分组
+<ul>
+<li><code>$push</code>将该分组下的数据插入，最终产生一个数组</li>
+<li><code>{$sum:1}</code>用于普通计数</li>
+</ul></li>
+</ul></li>
+<li><p>日期</p>
+<ul>
+<li><code>$dateToString</code></li>
+<li><code>$subtract</code></li>
+<li><code>$toDate</code></li>
+</ul></li>
+</ul>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2023年08月23日 17:29</p>
-        <p>原始链接： <a class="post-url" href="/hexo%E4%BD%BF%E7%94%A8/" title="hexo使用">戳这里</a></p>
+        <p>最后更新： 2023年08月21日 15:17</p>
+        <p>原始链接： <a class="post-url" href="/2023/08/01/Mongo/" title="Mongo">戳这里</a></p>
         <footer>
             <a href="https://nomrxu.github.io">
                 <img src="/images/logo.png" alt="NoMrXu">
@@ -248,7 +204,7 @@ failed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者�
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/&title=《hexo使用》 — NoMrXu's Blog&pic=https://nomrxu.github.ioimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nomrxu.github.io/2023/08/01/Mongo/&title=《Mongo》 — NoMrXu's Blog&pic=https://nomrxu.github.ioimages/logo.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -258,22 +214,22 @@ failed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者�
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/&title=《hexo使用》 — NoMrXu's Blog&source=这里记录了我使用hexo的情况" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nomrxu.github.io/2023/08/01/Mongo/&title=《Mongo》 — NoMrXu's Blog&source=这里记录了工作中遇到的Mongo问题。" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nomrxu.github.io/2023/08/01/Mongo/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo使用》 — NoMrXu's Blog&url=https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/&via=https://nomrxu.github.io" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Mongo》 — NoMrXu's Blog&url=https://nomrxu.github.io/2023/08/01/Mongo/&via=https://nomrxu.github.io" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nomrxu.github.io/2023/08/01/Mongo/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -283,7 +239,7 @@ failed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者�
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nomrxu.github.io/hexo%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nomrxu.github.io/2023/08/01/Mongo/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -295,7 +251,7 @@ failed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者�
   <li class="article-footer-tags">
     <i class="fa fa-tags"></i>
       
-    <a href="/tags/hexo/" class="color5">hexo</a>
+    <a href="/tags/数据库/" class="color4">数据库</a>
       
   </li>
 
@@ -306,25 +262,24 @@ failed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者�
 </article>
 
 
-    <aside class="post-toc-pos post-toc-top" id="post-toc">
-        <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#typora%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%86%85%E5%AE%B9"><span class="post-toc-text">Typora中的一些内容</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%91%98%E5%BD%95"><span class="post-toc-text">摘录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="post-toc-text">快捷键</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#miho%E4%B8%BB%E9%A2%98"><span class="post-toc-text">MiHo主题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8F%98%E9%87%8F"><span class="post-toc-text">变量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA"><span class="post-toc-text">图片显示</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#hexo"><span class="post-toc-text">Hexo</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C"><span class="post-toc-text">命令行</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%85%AC%E5%BC%8F%E5%9D%97"><span class="post-toc-text">公式块</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9B%BE%E7%89%87"><span class="post-toc-text">图片</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#aplayer"><span class="post-toc-text">Aplayer</span></a></li></ol>
-        </nav>
-    </aside>
-    
 
 <nav id="article-nav">
   
-    <a href="/%E9%9A%8F%E6%83%B3/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/08/21/%E5%8E%A8%E7%A5%9E%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          随想
+          厨神篇
         
       </span>
     </a>
   
+  
+    <a href="/2023/07/31/Vue%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Vue学习</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
   
 </nav>
 
@@ -475,5 +430,21 @@ failed</strong>，就把<strong>.deploy_git</strong>删除重新部署。或者�
   </script>
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 </body>
 </html>
