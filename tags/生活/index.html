@@ -86,7 +86,7 @@
                 <div id="header-description">
                     
                     <h3 >
-                        <a href="https://nomrxu.github.io/2023/07/26/随想/" target="_blank" style="text-decoration: none; color: inherit;">有一天，他想起来写点什么</a>
+                        <a id="random_think" target="_blank" style="text-decoration: none; color: inherit;">有一天，他想起来写点什么</a>
                     </h3>
                     
                 </div>
@@ -105,6 +105,18 @@
         </div>
     </div>
 </header>
+
+<script>
+    var random_think = document.getElementById("random_think")
+    // 获取当前页面的主机名
+    var currentHost = window.location.hostname;
+    if (currentHost==='localhost'){
+        random_think.href= "http://localhost:4000/随想/"
+    }else {
+        random_think.href= "https://nomrxu.github.io/随想/"
+    }
+    console.log(currentHost)
+</script>
 
       <div class="outer">
         <section id="main" class="body-wrap">
@@ -331,21 +343,5 @@
   </script>
 
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 </body>
 </html>
