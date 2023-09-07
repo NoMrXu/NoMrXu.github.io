@@ -3,22 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Mongo | NoMrXu&#39;s Blog</title>
+  <title>算法题 | NoMrXu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="这里记录了工作中遇到的Mongo问题。">
+  <meta name="description" content="虽然不会经常写，但偶尔加一点。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mongo">
-<meta property="og:url" content="https://nomrxu.github.io/2023/08/01/Mongo/index.html">
+<meta property="og:title" content="算法题">
+<meta property="og:url" content="https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/index.html">
 <meta property="og:site_name" content="NoMrXu&#39;s Blog">
-<meta property="og:description" content="这里记录了工作中遇到的Mongo问题。">
+<meta property="og:description" content="虽然不会经常写，但偶尔加一点。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
-<meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
-<meta property="article:published_time" content="2023-08-01T06:45:05.000Z">
-<meta property="article:modified_time" content="2023-08-21T07:17:23.885Z">
+<meta property="article:published_time" content="2023-08-21T06:25:24.000Z">
+<meta property="article:modified_time" content="2023-08-24T07:12:49.049Z">
 <meta property="article:author" content="NoMrXu">
-<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8">
   
@@ -113,20 +111,20 @@
 </header>
 
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-Mongo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-算法题" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      Mongo
+      算法题
     </h1>
     <div class="post-title-bar">
       <ul>
           
         <li>
-          <i class="fa fa-calendar"></i>  2023-08-01
+          <i class="fa fa-calendar"></i>  2023-08-21
         </li>
 <!--        <li>-->
 <!--          <i class="fa fa-eye"></i>-->
@@ -146,39 +144,28 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <p>这里记录了工作中遇到的Mongo问题。 <span id="more"></span></p>
-<p>Mongo查询的核心思想是流式查询，每一步都在对上一步的结果进行处理。$代表表中的值。</p>
-<ul>
-<li><p>可以使用<code>md.runSqlQuery(`   `)</code>试着执行SQL语句，不过可能会有意外的BUG</p></li>
-<li><p>使用<code>$field</code>指代字段下的数据</p></li>
-<li><p><code>$aggregate</code>——聚合函数，里面可以放多种对数据的处理。根据每种处理的顺序执行，类似管道</p>
-<ul>
-<li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><code>$project</code>——数据映射
-<ul>
-<li>{<code>_id: 0</code>}——不显示_id（_id会默认显示）</li>
-</ul></li>
-<li><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <code>$match</code>——数据过滤
-<ul>
-<li>使用<code>$and</code>或者<code>$or</code>来进行条件连接</li>
-</ul></li>
-<li><code>$group</code>——分组
-<ul>
-<li><code>$push</code>将该分组下的数据插入，最终产生一个数组</li>
-<li><code>{$sum:1}</code>用于普通计数</li>
-</ul></li>
-</ul></li>
-<li><p>日期</p>
-<ul>
-<li><code>$dateToString</code></li>
-<li><code>$subtract</code></li>
-<li><code>$toDate</code></li>
-</ul></li>
-</ul>
+            <p>虽然不会经常写，但偶尔加一点。 <span id="more"></span></p>
+<h1 id="滑动窗口">滑动窗口</h1>
+<ol type="1">
+<li>用两个数字<span class="math inline">\(l,r\)</span>代表窗口的左右</li>
+<li><span class="math inline">\(r\)</span>不断增大，直至不满足条件</li>
+<li><span class="math inline">\(l\)</span>不断增大，直至重新满足条件</li>
+<li>返回结果</li>
+</ol>
+<p>（注意下标越界）</p>
+<h1 id="左右指针">左右指针</h1>
+<p>当我们需要枚举数组中的两个元素时，随着第一个元素的递增，第二个元素递减，在排序之后，使用一左一右两个指针，向中间靠拢。</p>
+<h1 id="动态规划">动态规划</h1>
+<p><span class="math display">\[
+P(i,j)
+\]</span></p>
+<p><strong>状态转移方程</strong>是动态规划的关键（边界条件也很重要），通常有两个变量。想象一个二维数组是很有用的。</p>
+<p><span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>通常由两层循环组成，外层循环遍历length，内层循环遍历起始位置。<strong>区间长度由短至长</strong>，在计算长区间时可以利用之前计算过的短区间结果。</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2023年08月21日 15:17</p>
-        <p>原始链接： <a class="post-url" href="/2023/08/01/Mongo/" title="Mongo">戳这里</a></p>
+        <p>最后更新： 2023年08月24日 15:12</p>
+        <p>原始链接： <a class="post-url" href="/%E7%AE%97%E6%B3%95%E9%A2%98/" title="算法题">戳这里</a></p>
         <footer>
             <a href="https://nomrxu.github.io">
                 <img src="/images/logo.png" alt="NoMrXu">
@@ -204,7 +191,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nomrxu.github.io/2023/08/01/Mongo/&title=《Mongo》 — NoMrXu's Blog&pic=https://nomrxu.github.ioimages/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/&title=《算法题》 — NoMrXu's Blog&pic=https://nomrxu.github.ioimages/logo.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -214,22 +201,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nomrxu.github.io/2023/08/01/Mongo/&title=《Mongo》 — NoMrXu's Blog&source=这里记录了工作中遇到的Mongo问题。" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/&title=《算法题》 — NoMrXu's Blog&source=虽然不会经常写，但偶尔加一点。" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nomrxu.github.io/2023/08/01/Mongo/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Mongo》 — NoMrXu's Blog&url=https://nomrxu.github.io/2023/08/01/Mongo/&via=https://nomrxu.github.io" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《算法题》 — NoMrXu's Blog&url=https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/&via=https://nomrxu.github.io" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nomrxu.github.io/2023/08/01/Mongo/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -239,7 +226,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nomrxu.github.io/2023/08/01/Mongo/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://nomrxu.github.io/%E7%AE%97%E6%B3%95%E9%A2%98/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -248,13 +235,6 @@
         <ul class="article-footer-menu">
             
             
-  <li class="article-footer-tags">
-    <i class="fa fa-tags"></i>
-      
-    <a href="/tags/数据库/" class="color4">数据库</a>
-      
-  </li>
-
         </ul>
         
     </footer>
@@ -262,22 +242,28 @@
 </article>
 
 
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3"><span class="post-toc-text">滑动窗口</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%B7%A6%E5%8F%B3%E6%8C%87%E9%92%88"><span class="post-toc-text">左右指针</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="post-toc-text">动态规划</span></a></li></ol>
+        </nav>
+    </aside>
+    
 
 <nav id="article-nav">
   
-    <a href="/2023/08/21/%E5%8E%A8%E7%A5%9E%E7%AF%87/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/%E5%A4%A7%E6%95%B0%E6%8D%AE/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          厨神篇
+          大数据
         
       </span>
     </a>
   
   
-    <a href="/2023/07/31/Vue%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">Vue学习</span>
+    <a href="/%E5%8E%A8%E7%A5%9E%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">厨神篇</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
@@ -430,21 +416,5 @@
   </script>
 
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 </body>
 </html>
